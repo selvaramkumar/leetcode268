@@ -1,8 +1,8 @@
 class Solution:
     def missingNumber(self, nums) -> int:
-        expec_sum=(len(nums))*(len(nums)+1)//2
-        actual=sum(nums)
-        return abs(expec_sum-actual)
+        n = len(nums)
+        # ans = expected_sum - actual_sum
+        return n*(n+1)//2 - sum(nums)
 s=Solution()
 arr=[0,1]
 print(s.missingNumber(arr))     
